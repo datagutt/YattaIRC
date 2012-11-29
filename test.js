@@ -1,4 +1,4 @@
-YattaIRC = require './src/IRC';
+YattaIRC = require('./lib/IRC');
 IRC = new YattaIRC;
 session = IRC.connect('irc.freenode.net', 6667);
 IRC.nick(session, 'YattaBot');
