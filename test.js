@@ -3,7 +3,7 @@ IRC = new YattaIRC;
 session = IRC.connect('irc.freenode.net', 6667);
 IRC.nick(session, 'YattaBot');
 IRC.user(session, 'yatta', 8, 'Hiro Nakamura');
-//IRC.join(session, '#blamesamsung');
+IRC.join(session, '#bbqdroid');
 
 // Command line interface
 process.stdin.resume();
@@ -17,4 +17,7 @@ process.stdin.on('data', function(msg){
 });
 IRC.event.on('join', function(event){
 	console.log('[JOIN] ' + event.source.nick + ' joined ' + event.channel);
+});
+IRC.event.on('privmsg', function(event){
+	console.log('[MSG] [' + event.target + '] '+event.source.nick+' says: ' + event.message);
 });
