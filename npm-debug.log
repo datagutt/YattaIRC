@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/local/bin/node', '/opt/local/bin/npm', 'publish' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose publish [ '.' ]
+5 verbose read json /Users/datagutt/Documents/YattaIRC/package.json
+6 verbose cache add [ '.', null ]
+7 silly cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { pathname: '.', path: '.', href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/datagutt/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 silly lockFile 3a52ce78- .
+13 error addLocal Could not install .
+14 error Error: invalid version: 0.1
+14 error     at validVersion (/opt/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:537:40)
+14 error     at final (/opt/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:297:23)
+14 error     at /opt/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:119:33
+14 error     at cb (/opt/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:48:11)
+14 error     at /opt/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:237:59
+14 error     at Glob.<anonymous> (/opt/local/lib/node_modules/npm/node_modules/glob/glob.js:91:7)
+14 error     at Glob.EventEmitter.emit (events.js:96:17)
+14 error     at Glob._processEmitQueue (/opt/local/lib/node_modules/npm/node_modules/glob/glob.js:272:10)
+14 error     at Glob.emitMatch (/opt/local/lib/node_modules/npm/node_modules/glob/glob.js:257:8)
+14 error     at Glob._finish (/opt/local/lib/node_modules/npm/node_modules/glob/glob.js:219:8)
+15 error If you need help, you may report this log at:
+15 error     <http://github.com/isaacs/npm/issues>
+15 error or email it to:
+15 error     <npm-@googlegroups.com>
+16 error System Darwin 12.2.0
+17 error command "/opt/local/bin/node" "/opt/local/bin/npm" "publish"
+18 error cwd /Users/datagutt/Documents/YattaIRC
+19 error node -v v0.8.14
+20 error npm -v 1.1.65
+21 verbose exit [ 1, true ]
