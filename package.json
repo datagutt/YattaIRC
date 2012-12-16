@@ -1,0 +1,11 @@
+{
+	'name':        'YattaIRC',
+	'version':     '0.2',
+	'author':      'datagutt',
+	'keywords':    'irc lib library',
+	'description': '',
+	'licenses': [{
+		'type':	'MIT',
+		'url':	'http://github.com/datagutt/YattaIRC/raw/master/LICENSE'
+	}]
+}
