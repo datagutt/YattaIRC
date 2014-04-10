@@ -17,7 +17,11 @@ process.stdin.on('data', function(msg){
 });
 IRC.event.on('join', function(event){
 	console.log('[JOIN] ' + event.source.nick + ' joined ' + event.channel);
+console.log(IRC.servers[0].getChannel('bbqdroid'));
 });
 IRC.event.on('privmsg', function(event){
 	console.log('[MSG] [' + event.target + '] '+event.source.nick+' says: ' + event.message);
+});
+IRC.event.on('topic', function(event){
+	console.log(event);
 });
